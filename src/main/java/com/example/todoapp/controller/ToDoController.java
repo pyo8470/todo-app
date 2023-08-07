@@ -28,7 +28,7 @@ public class ToDoController {
 //        return toDoService.getAllToDo();
 //    }
     @GetMapping("/")
-    public String helloWorld(){
+    public String helloWorldDev(){
         return "To-do Application !";
     }
 
