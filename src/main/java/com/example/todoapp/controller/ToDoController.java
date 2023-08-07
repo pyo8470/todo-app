@@ -29,7 +29,7 @@ public class ToDoController {
 //    }
 
     @GetMapping("/")
-    public String helloWorld(){
+    public String helloWorldDev(){
         return "To-do Application !";
     }
 
