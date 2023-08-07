@@ -23,14 +23,15 @@ public class ToDoController {
         return toDoService.createToDo(toDoEntity);
     }
 
-//    @GetMapping("/")
-//    public List<ToDoEntity> getAllToDo() {
-//        return toDoService.getAllToDo();
-//    }
     @GetMapping("/")
-    public String helloWorld(){
-        return "To-do Application !";
+    public List<ToDoEntity> getAllToDo() {
+        return toDoService.getAllToDo();
     }
+
+//    @GetMapping("/")
+//    public String helloWorld(){
+//        return "To-do Application !";
+//    }
 
     @GetMapping("/{id}")
     public ToDoEntity getToDoById(@PathVariable Long id) {
